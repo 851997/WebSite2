@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />  
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <title></title>
+</head>
+<body>
+    <div class="container-fluid" style="background-color: transparent;">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light " style="background-color:transparent;padding-top:0em;padding-bottom:0em">
+            <div class="container-fluid" style="background-color: transparent; padding-top: 0em;">
+
+
+                <a class="navbar-brand" href="#" style="color: green;">
+                    <img src="imgs/logo5.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    100% Veg Food
+                </a>
+
+
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="background-color: transparent;">
+
+                    <ul class="navbar-nav" style="background-color: transparent;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#homee">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#feature" data-bs-target="#feature">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sigdishes">Signaure Dishes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#comments">Comments</a></li>
+                                <li><a class="dropdown-item" href="#about">Our Chefs</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dishes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Dosa</a></li>
+                                <li><a class="dropdown-item" href="#">Idli</a></li>
+                                <li><a class="dropdown-item" href="#">Sadya</a></li>
+                                <li><a class="dropdown-item" href="#">Biriyani</a></li>
+
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!------------------------Home-------------------------->
+    <div class=" container-fluid" style="padding-left:0em;padding-right:0em;">
+
+
+
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" ">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="imgs/logo5.png" class="d-block w-100" alt="..." style="height:500px;width:100%;">
+                    <!--<div id="homee" style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%);font-size:80px; color:white;">Welcome to <i>HomelyFoodies...</i></div>-->
+                    <div class="row">
+                        <div class="col-lg-4 col-md-8 col-sm-12" style="height: 200px; padding-bottom: 100px; background-image: url(imgs/logo2.png); ">
+                            <h5 style="color:white;">Vegitables are Fresh From  Our Plantation</h5><br /><h9 style="color:white;">Lorem ipsum dolor sit amet, consectetur adipi elit.</h9>
+
+                            <!-- Button trigger modal -->
+                            <div style="padding-left:300px;">
+                                <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                    plantation images
+                                </button>-->
+                                <button class="btn btn-outline-success" onclick="handleClick()">See Image</button>
+
+
+
+                            </div>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="row">
+                                                <div class="col-lg-3  col-md-6  col-sm-12">
+                                                    <img src="imgs/coconut.jpg" alt="Avatar" style=" border-radius: 60%; padding-left: .5em; padding-right: .2em; width: 100px; height: 200px;">
+
+                                                </div>
+                                                <div class="col-lg-3  col-md-6  col-sm-12">
+                                                    <img src="imgs/rice.jpg" alt="Avatar" style="border-radius: 60%; padding-right: .5em; padding-left: .2em; width: 100px; height:200px;">
+
+                                                </div>
+                                                <div class="col-lg-3  col-md-6  col-sm-12">
+                                                    <img src="imgs/tomato.jpg" alt="Avatar" style="border-radius: 60%; padding-right: .5em; padding-left: .2em; width: 100px; height: 200px; ">
+
+                                                </div>
+                                                <div class="col-lg-3  col-md-6  col-sm-12">
+                                                    <img src="imgs/chilli.jpg" alt="Avatar" style="border-radius: 60%; padding-right: .5em; padding-left:. 2em; width: 100px; height: 200px; ">
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="col-lg-4 col-md-8 col-sm-12" style=" height: 200px; padding-bottom: 100px; background-image: url(imgs/logo2.png);"><h5 style="color:white;">100% Organic Oil</h5><br /><h9 style="color:white;">Lorem ipsum dolor sit amet, consectetur adipi elit.</h9></div>
+                        <div class="col-lg-4 col-md-8 col-sm-12" style=" height: 200px; padding-bottom: 100px; background-image: url(imgs/logo2.png); ">
+                            <h5 style="color:white;">Celebrate your special day</h5><br /><h9 style="color:white;">Lorem ipsum dolor sit amet, consectetur adipi elit.</h9>
+
+
+                            <!-- Button trigger modal -->
+                            <br /> <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Book a table
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Book a table</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="mb-3">
+                                                <br /><br /><br /><br />
+                                                <!--<label for="exampleFormControlInput1" class="form-label">Name</label>-->
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name" style="width: 300px;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <!--<label for="exampleFormControlInput1" class="form-label">Phone number</label>-->
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Phone number" style="width: 300px;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <!--<label for="exampleFormControlInput1" class="form-label">Phone number</label>-->
+                                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Number of tables" style="width: 300px;">
+                                            </div>
+                                            <div class="mb-3">
+                                                <!--<label for="exampleFormControlTextarea1" class="form-label"></label>-->
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="About the event and dishes you want" style="width: 300px;"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Register</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="imgs/masaladosa.jpg" class="d-block w-100" alt="...">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);font-size:80px; color:black;">Budget Friendly Foods...</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/icecream.jpg" class="d-block w-100" alt="...">
+                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);font-size:80px; color:black;">6 days are Open in a week</div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/Bestcoffee.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="imgs/masaladosa.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--------------------------------------Features----------------------------------------->
+    <div class="container-fluid" id="feature">
+        <h1>Foods</h1>
+        <br />
+        <div class="row">
+            <div class="col-lg-3  col-md-6  col-sm-12">
+                <img src="imgs/navimg.jpg" alt="Avatar" style=" border-radius: 60%; padding-left: 2em; padding-right: 2em; width: 300px; height: 200px;">
+                <h4>Dosa</h4>
+            </div>
+            <div class="col-lg-3  col-md-6  col-sm-12">
+                <img src="imgs/sadya.jpg" alt="Avatar" style="border-radius: 60%; padding-right: 2em; padding-left: 2em; width: 300px; height:200px;">
+                <h4>Sadya</h4>
+            </div>
+            <div class="col-lg-3  col-md-6  col-sm-12">
+                <img src="imgs/vegfood.jpg" alt="Avatar" style="border-radius: 60%; padding-right: 2em; padding-left: 2em; width: 300px; height: 200px; ">
+                <h4>Thaali</h4>
+            </div>
+            <div class="col-lg-3  col-md-6  col-sm-12">
+                <img src="imgs/puranpoli.jpg" alt="Avatar" style="border-radius: 60%; padding-right: 2em; padding-left: 2em; width: 300px; height: 200px; ">
+                <h4>Pooran boli</h4>
+            </div>
+
+        </div>
+        <br />
+        <h2>Signature Dishes</h2><br />
+        <div class="row" id="sigdishes">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/navimg1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Masala Dosa</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/coldcoffee1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Cold Coffee</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/vegbiryani.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Vegitable Biriyani</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card" style="width: 18rem;">
+                    <img src="imgs/carrothalwa.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h4>Carrot Halwa</h4>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------heroimg-------------------------->
+    <div class=" container-fluid">
+
+        <h2>Features</h2><br />
+
+        <div class="row">
+            <div class="col-lg-6 col-md-9 col-sm-12">
+                <div class="hero-image" style="background-image: url(imgs/veg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;  width:100%; margin: 0; font-family: Arial, Helvetica, sans-serif; ">
+                    <div class="hero-text">
+                        <h1>100% Veg Food</h1>
+                        <p>And Vegitables are Organic</p>
+                        <!--<button>Hire me</button>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-9 col-sm-12">
+                <div style="background-image: url(imgs/icecream.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;  width: 120%; height:300px; margin : 0; font-family: Arial, Helvetica, sans-serif; ">
+
+                    <div class="hero-text">
+                        <h1>Ice Creams are</h1>
+                        <p>Made with Original Cow milk</p>
+                    </div>
+
+                </div>
+                <br />
+                <div style="background-image: url(imgs/navimg.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;  width: 120%; height:170px; margin : 0; font-family: Arial, Helvetica, sans-serif; ">
+
+                    <div class="hero-text">
+                        <h1>Virgin</h1>
+                        <p>Coconut Oil is used</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--...........................comments...................................-->
+    <div class="container-fluid" id="comments">
+        <br />
+        <h2>Comments</h2><br />
+
+        <div class="row" style="background-image: url(imgs/leaves.jpg); background-repeat: no-repeat; background-position: center; background-size: cover; position: relative;  width:100%;height:600px; margin: 0; font-family: Arial, Helvetica, sans-serif; ">
+            <div class="col-lg-6 col-md-9 col-sm-12">
+
+                <h1 style="font-size:50px;color:white; position:absolute;padding-left:20px;padding-right:170px;bottom:50%">25% Discount are available<br /> in every first purchase</h1>
+
+
+
+            </div>
+
+            <div class="col-lg-6 col-md-9 col-sm-12">
+                <div class="mb-3">
+                    <br /><br /><br /><br />
+
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name" style="width: 500px;">
+                </div>
+                <div class="mb-3">
+
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Phone number" style="width: 500px;">
+                </div>
+                <div class="mb-3">
+
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Comments" style="width: 500px;"></textarea>
+                </div>
+                <button class="btn btn-primary" type="button" style="width :500px;">Submit</button>
+            </div>
+        </div>
+
+
+
+    </div>
+    <!--.............................Accordian...................-->
+    <br /><br /><br /><div class=" container-fluid" id="about">
+        <div class="row" style="background-image:url(imgs/kitchen.jpg); height:500px;width:100%;">
+            <h2>Our Chefs</h2>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Chef Minnara Pillai
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Chef Minnara Pillai is the Executive Chef in our kitchen. </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Chef Rahul
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Chef Rahul is the Excutive Sous Chef in our kitchen</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Chef Susmitha Pillai
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Chef Susmitha Pillai is the junior most chef in our kitchen</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            Manju,Sobha,Radha,Ramesh,Geetha.
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">These are other helping hands of our kitchen</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--..........................footer......................-->
+
+
+    <div class="blockcode">
+        <div class="header"></div>
+
+        <footer class="page-footer shadow">
+            <div class="d-flex flex-column mx-auto py-5" style="width: 80%">
+                <div class="d-flex flex-wrap justify-content-between">
+                    <div>
+                        <a href="/" class="d-flex align-items-center p-0 text-dark">
+                            <img alt="logo" src="imgs/logo5.png" width="30px" />
+                            <span class="ms-3 h5 font-weight-bold">Homely Foodies</span>
+                        </a>
+                        <p class="my-3" style="width: 250px">
+                            We are providing healthy Veg food.Vegitables are come from our own plantation.
+                        </p>
+                        <span class="mt-4">
+                            <button class="btn btn-dark btn-flat p-2">
+                                <i class="fa fa-facebook"></i>
+                            </button>
+                            <button class="btn btn-dark btn-flat p-2">
+                                <i class="fa fa-twitter"></i>
+                            </button>
+                            <button class="btn btn-dark btn-flat p-2">
+                                <i class="fa fa-instagram"></i>
+                            </button>
+                        </span>
+                    </div>
+                    <div>
+                        <p class="h5 mb-4" style="font-weight: 600">Homely Foodies</p>
+                        <ul class="p-0" style="list-style: none; cursor: pointer">
+
+                            <li class="my-2">
+                                <a class="text-dark" href="#about">About Us</a>
+                            </li>
+                            <li class="my-2">
+                                <a class="text-dark" href="#comments">Comments</a>
+                            </li>
+
+                            <div class="text-dark">Contact :<br />+91(123567890)<br />example@gmail.com</div>
+
+
+                        </ul>
+                    </div>
+                    <div>
+
+
+                    </div>
+
+                </div>
+                <small class="text-center mt-5">&copy; Homely Foodies, 2024. All rights reserved.</small>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function handleClick() {
+            console.log('Button clicked');
+            $('#staticBackdrop').modal('show');
+        }
+    </script>
+
+</body>
+</html>
